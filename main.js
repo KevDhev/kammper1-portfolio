@@ -32,7 +32,12 @@ function copyToClipboard(text) {
 // Event listeners for navigation items
 sectionItems.forEach((item, index) => {
   item.addEventListener("click", () => {
-    const sectionsMap = ["about-me", "videos-section", "shorts-section"];
+    const sectionsMap = [
+      "about-me",
+      "videos-section",
+      "shorts-section",
+      "thumbnails-section",
+    ];
     showSection(sectionsMap[index]);
   });
 });

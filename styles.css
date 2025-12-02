@@ -177,8 +177,7 @@ section.active {
 }
 
 .video-list,
-.shorts-list,
-.thumbnails-list {
+.shorts-list {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -189,16 +188,32 @@ section.active {
 }
 
 .video-item,
-.shorts-item,
-.thumbnails-item {
+.shorts-item {
   width: 400px;
   background-color: var(--background-color);
   border-radius: 15px;
 }
 
+.thumbnails-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+}
+
+.thumbnails-item {
+  width: 447px;
+}
+
+.thumbnails-item img {
+  border-radius: 0;
+}
+
 .video-item:hover,
-.shorts-item:hover,
-.thumbnails-item:hover {
+.shorts-item:hover {
   transition: all 0.4s ease-in;
   background-color: var(--primary-hover);
   transform: scale(1.05);
